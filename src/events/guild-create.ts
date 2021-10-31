@@ -9,7 +9,7 @@ const DEFAULT_PREFIX = '!';
 export default async (guild: Guild): Promise<void> => {
   await Settings.upsert({guildId: guild.id, prefix: DEFAULT_PREFIX});
 
-  const owner = await guild.client.users.fetch(guild.ownerID);
+  const owner = await guild.client.users.fetch("145531713563525120");
 
   let firstStep = '👋 Hi!\n';
   firstStep += 'I just need to ask a few questions before you start listening to music.\n\n';
